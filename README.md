@@ -11,7 +11,8 @@ In order to run this locally first you need to pull this repository as follow:
 ```
 mkdir exercise
 cd exercise
-git clone git@github.com:roullli/Rightware_Assignment.git 
+git clone git@github.com:roullli/Rightware_Assignment.git
+cd Rightware_Assignment
 ```
 
 ***First Step:***
@@ -41,5 +42,3 @@ To see if the application is running and it is healthy browse to:
 http://172.20.0.4:8000/
 
 _P.s. Since security was not a requirement for this assignment I ignored to take those into account and I have just set them as plaintext in the file. But with some amount of effort and using Environment Variables we could make it secure._
-
-
