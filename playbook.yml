@@ -1,0 +1,26 @@
+---
+- name: Righware Assignment
+  hosts: notejam_apps
+  remote_user: test
+  become:      yes
+  
+  tasks:
+
+    - name: install python2
+      apt:
+        name: python2.7
+        state: present
+
+    - name: install pip
+      apt:
+        name: python-pip
+        state: present
+    
+    - name: Execute the script
+      ansible.builtin.script: ./script.sh
+    
+    - name: Run the App
+      shell: python /app/manage.py runserver 0.0.0.0:8000 &
+      async: 10
+      poll: 0
+
