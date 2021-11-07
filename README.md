@@ -40,7 +40,7 @@ It will prompt to enter the password: 'test'
 Then to install the packages and run the Notejam application:
 
 ```
-ansible-playbook playbook.yml -v
+ansible-playbook playbook.yml -i ./hosts
 ```
 
 To see if the application is running and it is healthy browes to:
