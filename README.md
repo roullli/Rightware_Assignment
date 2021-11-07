@@ -26,7 +26,7 @@ docker ps
 ```
 and to see if the ssh connection has been setup properly test with: 
 ```
-test@172.20.0.4
+ssh test@172.20.0.4
 ```
 It will prompt to enter the password: 'test'
 
@@ -40,6 +40,6 @@ To see if the application is running and it is healthy browse to:
 
 http://172.20.0.4:8000/
 
-P.s. Since security was not a requirement for this assignment I ignored to take those into accont and I have just set them as a plaintext in the file. But with som amount of effort and using Environment Variables we could make it secure.
+_P.s. Since security was not a requirement for this assignment I ignored to take those into accont and I have just set them as a plaintext in the file. But with som amount of effort and using Environment Variables we could make it secure._
 
 
