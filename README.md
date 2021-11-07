@@ -6,7 +6,7 @@ Here I will demonstrate how did it go on step by step:
 
 In order to run this locally first you need to pull this repository as follow:
 
-**NOTE:** You need to have installed Docker, Vagrant, and Ansible before hand on you working environment
+**NOTE:** You need to have installed Docker, Vagrant, and Ansible beforehand on your working environment
 
 ```
 mkdir exercise
@@ -40,6 +40,6 @@ To see if the application is running and it is healthy browse to:
 
 http://172.20.0.4:8000/
 
-_P.s. Since security was not a requirement for this assignment I ignored to take those into accont and I have just set them as a plaintext in the file. But with som amount of effort and using Environment Variables we could make it secure._
+_P.s. Since security was not a requirement for this assignment I ignored to take those into account and I have just set them as plaintext in the file. But with some amount of effort and using Environment Variables we could make it secure._
 
 
