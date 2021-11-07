@@ -14,38 +14,31 @@ cd exercise
 git clone git@github.com:roullli/Rightware_Assignment.git 
 ```
 
-First Step:
+***First Step:***
 
 To run the docker container using vagrant run the following command inside the 'app' directory:
 ```
-Vagrant up
+vagrant up
 ```
-
 To check that the container is up and running use the following command:
-
 ```
 docker ps
 ```
-
 and to see if the ssh connection has been setup properly test with: 
-
 ```
-ssh test@172.20.0.4
+test@172.20.0.4
 ```
-
 It will prompt to enter the password: 'test'
 
-2nd Step:
+***2nd Step:***
 
 Then to install the packages and run the Notejam application:
-
 ```
 ansible-playbook playbook.yml -i ./hosts
 ```
+To see if the application is running and it is healthy browse to:
 
-To see if the application is running and it is healthy browes to:
-
-172.20.0.4:8000
+http://172.20.0.4:8000/
 
 P.s. Since security was not a requirement for this assignment I ignored to take those into accont and I have just set them as a plaintext in the file. But with som amount of effort and using Environment Variables we could make it secure.
 
